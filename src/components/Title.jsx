@@ -1,5 +1,5 @@
 function Title() {
-    return <h1 className="text-zinc-800 text-5xl text-center font-semibold">Todo App</h1>;
+    return <h1 className="text-blue-700 text-5xl text-center font-bold">Todo App</h1>;
   }
   
   export default Title;
