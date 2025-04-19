@@ -1,4 +1,6 @@
 import { useState } from "react";
+import edit from '/public/edit.png';
+import del from '/public/delete.png';
 
 function TodoItem({todo, removeTodo, updateTodo}) {
   const [isEditing, setIsEditing] = useState(false);
@@ -44,7 +46,7 @@ function TodoItem({todo, removeTodo, updateTodo}) {
         {() => {
           setIsEditing(true);
         }}>
-        <img src="/src/assets/edit.png" alt="" srcset="" className="h-7 w-11" />
+        <img src={edit} alt="" srcset="" className="h-7 w-11" />
       </button>
 
       <button 
@@ -53,7 +55,7 @@ function TodoItem({todo, removeTodo, updateTodo}) {
       
       >
       
-        <img src="/src/assets/delete.png" alt="" srcset="" className="h-7 w-11" />
+        <img src={del} alt="" srcset="" className="h-7 w-11" />
       </button>
     </div>
   );
